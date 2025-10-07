@@ -28,6 +28,8 @@ functions = "/Users/moeinrazavi/Documents/GitHub/Clink_Website/netlify/functions
 [functions]
 
 [functions."*"]
+node_bundler = "esbuild"
+included_files = ["netlify/functions/*.p8"]
 
 [[headers]]
 for = "/*"
