@@ -30,11 +30,13 @@ const server = http.createServer((req, res) => {
             const teamId = 'YSTHT53U6R';
             const keyId = '2NFLGX88B9';
             
+            const now = Math.floor(Date.now() / 1000);
+            
             const token = jwt.sign(
                 {
                     iss: teamId,
-                    iat: Math.floor(Date.now() / 1000),
-                    exp: Math.floor(Date.now() / 1000) + 3600,
+                    iat: now,
+                    exp: now + 3600
                 },
                 privateKey,
                 {
@@ -50,10 +52,13 @@ const server = http.createServer((req, res) => {
 
             res.writeHead(200, {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET, OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type'
             });
             res.end(JSON.stringify({ token }));
             console.log('✅ Token generated successfully');
+            console.log('Token preview:', token.substring(0, 50) + '...');
         } catch (error) {
             console.error('❌ Error generating token:', error);
             res.writeHead(500, { 'Content-Type': 'application/json' });

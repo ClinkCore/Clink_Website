@@ -25,12 +25,12 @@ module.exports = async (req, res) => {
     const origin = req.headers.origin || req.headers.referer || 'https://clinkn.com';
 
     // Generate JWT token
+    const now = Math.floor(Date.now() / 1000);
     const token = jwt.sign(
       {
         iss: teamId,
-        iat: Math.floor(Date.now() / 1000),
-        exp: Math.floor(Date.now() / 1000) + 3600, // 1 hour expiration
-        origin: origin
+        iat: now,
+        exp: now + 3600 // 1 hour expiration
       },
       privateKey,
       {
