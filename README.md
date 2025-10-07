@@ -274,7 +274,7 @@ Edit `styles.css` and change the CSS custom properties:
 ### Update Contact Info
 
 Update email addresses throughout the site:
-- Replace `support@clinkn.com` with your actual support email
+- Replace `innovated@clinkn.com` with your actual support email
 - Update social media handles if applicable
 
 ## 📱 Features
@@ -351,7 +351,7 @@ Copyright © 2025 Clink Innovated, LLC. All rights reserved.
 ## 🤝 Support
 
 For website issues or questions:
-- Email: support@clinkn.com
+- Email: innovated@clinkn.com
 - Website: https://clinkn.com
 
 ---
