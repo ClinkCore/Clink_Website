@@ -6,7 +6,8 @@
     <title>Privacy Policy - Clink</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="legal.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
+    <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +17,10 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <a href="index.html" class="logo-text">Clink</a>
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <img src="assets/app-icon.png" alt="Clink Logo" class="logo-icon">
+                    <span class="logo-text">Clink</span>
+                </a>
             </div>
             <div class="nav-links">
                 <a href="index.html#features">Features</a>
@@ -48,6 +52,45 @@
             <h1>Privacy Policy</h1>
             <p class="legal-date">Effective Date: October 5, 2025</p>
             <p class="legal-date">Last Updated: October 5, 2025</p>
+        </div>
+
+        <!-- Privacy Highlights -->
+        <div class="privacy-highlights">
+            <h3>Privacy Highlights</h3>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <h4>No Tracking</h4>
+                    <p>We don't track you across other apps or websites</p>
+                </div>
+                <div class="highlight-item">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="15" y1="9" x2="9" y2="15"/>
+                        <line x1="9" y1="9" x2="15" y2="15"/>
+                    </svg>
+                    <h4>No Ads</h4>
+                    <p>We don't sell your data or show third-party ads</p>
+                </div>
+                <div class="highlight-item">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 0 1 10 10v.5a3.5 3.5 0 0 1-3.5 3.5H17a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h1a10 10 0 0 1-10 10z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <h4>You Control</h4>
+                    <p>Delete your data and account anytime</p>
+                </div>
+                <div class="highlight-item">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    <h4>Secure</h4>
+                    <p>End-to-end encryption and secure storage</p>
+                </div>
+            </div>
         </div>
 
         <div class="legal-content">
@@ -83,19 +126,60 @@
 
                 <h3>3. Location Information</h3>
                 <ul>
-                    <li><strong>Bar/Business Location:</strong> If you register as a bar or business, we collect and store your business location to help customers find you</li>
-                    <li><strong>Location Services:</strong> We only request location access for business accounts. We do not track or collect location data from regular user accounts</li>
+                    <li><strong>Precise Location:</strong> We collect your location data to provide location-based features, including:
+                        <ul style="margin-top: 8px;">
+                            <li>Discovering nearby bars and businesses</li>
+                            <li>Showing relevant local content and events</li>
+                            <li>Connecting you with users in your area</li>
+                            <li>For business accounts: Setting and displaying your business location</li>
+                        </ul>
+                    </li>
+                    <li><strong>Location Permissions:</strong> You can disable location access in your device settings, though this may limit certain features</li>
                 </ul>
 
-                <h3>4. Data We Do NOT Collect</h3>
+                <h3>4. Purchases</h3>
+                <ul>
+                    <li><strong>Purchase History:</strong> Records of in-app purchases and subscriptions (if applicable)</li>
+                    <li><strong>Transaction Data:</strong> Information about your purchases to provide app functionality and analyze trends</li>
+                </ul>
+
+                <h3>5. Diagnostic and Usage Data</h3>
+                <p>To improve app performance and user experience, we collect:</p>
+                <ul>
+                    <li><strong>Crash Data:</strong> Information about app crashes to fix bugs and improve stability (not linked to your identity)</li>
+                    <li><strong>Performance Data:</strong> App performance metrics and load times (not linked to your identity)</li>
+                    <li><strong>Product Interaction:</strong> How you use features in the app for analytics purposes</li>
+                    <li><strong>Anonymous Usage Data:</strong> Aggregated usage patterns not linked to your identity</li>
+                </ul>
+
+                <h3>6. Data Linked to Your Identity</h3>
+                <p>The following data is collected and linked to your account and identity:</p>
+                <ul>
+                    <li>Contact Info (Name, Email Address)</li>
+                    <li>Precise Location (for location-based features)</li>
+                    <li>Sensitive Info (optional profile information)</li>
+                    <li>User Content (Photos, Videos, Messages, Audio Data)</li>
+                    <li>Identifiers (User ID)</li>
+                    <li>Purchases (Purchase History)</li>
+                </ul>
+
+                <h3>7. Data NOT Linked to Your Identity</h3>
+                <p>Some data is collected for app improvement but is not linked to your personal identity:</p>
+                <ul>
+                    <li><strong>Diagnostics:</strong> Crash Data and Performance Data (used to fix bugs and improve stability)</li>
+                    <li><strong>Anonymous User Content:</strong> Aggregated content patterns</li>
+                    <li><strong>Anonymous Usage Data:</strong> Aggregate usage patterns and feature interaction</li>
+                </ul>
+                <p>This anonymous data cannot be used to identify you personally and is used solely to improve app performance and user experience.</p>
+
+                <h3>8. Data We Do NOT Collect</h3>
                 <p>To be clear about our privacy practices, we do <strong>NOT</strong> collect:</p>
                 <ul>
-                    <li>Financial Information or credit card data</li>
                     <li>Health & Fitness Data</li>
                     <li>Browsing History outside our app</li>
-                    <li>Cross-App Tracking Data</li>
-                    <li>Diagnostic Data or crash logs</li>
-                    <li>Precise Location from Regular Users (only business accounts)</li>
+                    <li>Cross-App Tracking Data for advertising</li>
+                    <li>Search History outside our app</li>
+                    <li>Financial/Payment Information (handled by Apple)</li>
                 </ul>
             </section>
 
@@ -103,7 +187,7 @@
                 <h2>How We Use Your Information</h2>
                 <p>In accordance with Apple's App Store requirements, we clearly describe how we use each type of data we collect:</p>
                 
-                <h3>Primary Uses (App Functionality)</h3>
+                <h3>App Functionality</h3>
                 <ul>
                     <li><strong>Account Management:</strong> Create and manage your account, authenticate your identity</li>
                     <li><strong>Profile Features:</strong> Display your profile to other users, enable customization</li>
@@ -112,14 +196,45 @@
                     <li><strong>Moments:</strong> Allow you to share temporary photos/videos, automatically delete expired content</li>
                     <li><strong>Business Discovery:</strong> Display business locations and information to help customers find businesses</li>
                     <li><strong>Fraud Prevention:</strong> Detect and prevent fraud, abuse, and security incidents</li>
+                    <li><strong>Technical Operations:</strong> Use crash data and performance metrics to fix bugs and improve app stability</li>
                 </ul>
 
-                <h3>Uses We Do NOT Engage In</h3>
+                <h3>Product Personalization</h3>
                 <ul>
-                    <li>Third-Party Advertising - We do not display ads or share data for advertising</li>
-                    <li>Tracking - We do not track you across other apps or websites</li>
-                    <li>Data Selling - We do not sell your personal information</li>
-                    <li>Marketing to Third Parties - We do not share your data for others' marketing purposes</li>
+                    <li><strong>Customized Experience:</strong> Tailor content and features based on your profile, preferences, and interests</li>
+                    <li><strong>Friend Suggestions:</strong> Recommend potential friends based on mutual connections and university affiliation</li>
+                    <li><strong>Content Discovery:</strong> Show you relevant moments and user profiles based on your activity</li>
+                    <li><strong>Location-Based Services:</strong> Display nearby businesses and events relevant to your location</li>
+                </ul>
+
+                <h3>Analytics</h3>
+                <ul>
+                    <li><strong>Usage Analytics:</strong> Analyze how users interact with features to improve app performance</li>
+                    <li><strong>Purchase Analytics:</strong> Understand subscription and purchase patterns to optimize offerings</li>
+                    <li><strong>Performance Monitoring:</strong> Track app performance metrics to identify and fix issues</li>
+                    <li><strong>Feature Optimization:</strong> Determine which features are most valuable to users</li>
+                </ul>
+
+                <h3>Developer's Advertising or Marketing</h3>
+                <ul>
+                    <li><strong>Service Communications:</strong> Notify you about new features, updates, and promotional offers</li>
+                    <li><strong>Purchase Promotions:</strong> Send information about subscription options and special offers</li>
+                    <li><strong>App Updates:</strong> Inform you about important app changes and improvements</li>
+                </ul>
+
+                <h3>Other Purposes</h3>
+                <ul>
+                    <li><strong>Customer Support:</strong> Respond to your questions and provide technical assistance</li>
+                    <li><strong>Security and Safety:</strong> Protect users from abuse, fraud, and harmful content</li>
+                    <li><strong>Legal Compliance:</strong> Comply with legal obligations and enforce our terms of service</li>
+                </ul>
+
+                <h3>Important: What We Do NOT Do</h3>
+                <ul>
+                    <li><strong>No Third-Party Ads:</strong> We do not display third-party advertisements in our app</li>
+                    <li><strong>No Cross-App Tracking:</strong> We do not track you across other companies' apps or websites</li>
+                    <li><strong>No Data Selling:</strong> We do not sell your personal information to third parties</li>
+                    <li><strong>No Data Brokers:</strong> We do not share your data with data brokers</li>
                 </ul>
             </section>
 
@@ -157,42 +272,139 @@
             </section>
 
             <section class="legal-section">
+                <h2>Data Retention</h2>
+                <ul>
+                    <li><strong>Active Account Data:</strong> We retain your account information and profile data for as long as your account is active</li>
+                    <li><strong>Moments:</strong> Automatically deleted 7 days after posting (temporary content)</li>
+                    <li><strong>Main Profile Photos:</strong> Permanent profile photos remain until you delete them or close your account</li>
+                    <li><strong>Messages:</strong> Chat messages are retained until deleted by users</li>
+                    <li><strong>Deleted Accounts:</strong> When you delete your account, we will delete or anonymize your personal information within 30 days, except where we are required to retain it for legal compliance</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
                 <h2>Your Privacy Rights and Choices</h2>
+                
+                <h3>Access and Control</h3>
                 <p>You have the right to:</p>
                 <ul>
-                    <li><strong>Access Your Data:</strong> View and download your personal information</li>
-                    <li><strong>Update Information:</strong> Edit your profile information at any time</li>
+                    <li><strong>Access Your Data:</strong> View and download your personal information through your profile settings</li>
+                    <li><strong>Update Information:</strong> Edit your profile information, photos, and preferences at any time</li>
                     <li><strong>Delete Content:</strong> Remove your moments, messages, and profile pictures</li>
                     <li><strong>Delete Account:</strong> Permanently delete your account and associated data</li>
-                    <li><strong>Block Users:</strong> Prevent specific users from contacting you</li>
+                    <li><strong>Block Users:</strong> Prevent specific users from contacting you or viewing your profile</li>
+                </ul>
+
+                <h3>Privacy Settings</h3>
+                <ul>
+                    <li><strong>Moment Visibility:</strong> Choose whether each moment is visible to "Friends Only" or "Public"</li>
+                    <li><strong>Profile Visibility:</strong> Control who can view your profile information</li>
+                    <li><strong>Notification Preferences:</strong> Manage push notification settings in your device settings</li>
+                </ul>
+
+                <h3>Opt-Out Rights</h3>
+                <ul>
+                    <li><strong>Location Services:</strong> You can disable location access in your device settings (required for business accounts)</li>
+                    <li><strong>Camera/Microphone:</strong> You can revoke camera and microphone permissions in your device settings (will limit certain features)</li>
+                    <li><strong>Push Notifications:</strong> You can disable notifications in your device settings</li>
+                    <li><strong>Biometric Authentication:</strong> You can disable Face ID/Touch ID login and use password authentication instead</li>
                 </ul>
             </section>
 
             <section class="legal-section">
                 <h2>Tracking and Advertising</h2>
-                <p><strong>We Do NOT Track You</strong></p>
+                
+                <h3>We Do NOT Track You for Advertising</h3>
+                <p>In accordance with Apple's App Store requirements, we want to be clear about tracking:</p>
                 <ul>
-                    <li>No Cross-App Tracking</li>
-                    <li>No Data Brokers</li>
-                    <li>No Targeted Advertising</li>
-                    <li>No Advertising Networks</li>
-                    <li>No Third-Party Analytics Services</li>
+                    <li><strong>No Cross-App Tracking:</strong> We do not link data from our app with data from other companies' apps or websites for advertising purposes</li>
+                    <li><strong>No Data Brokers:</strong> We do not share your data with data brokers</li>
+                    <li><strong>No Third-Party Ads:</strong> We do not display third-party advertisements or use advertising networks</li>
+                    <li><strong>No Behavioral Advertising:</strong> We do not track your behavior for targeted advertising</li>
                 </ul>
+
+                <h3>What We DO Collect for Internal Use</h3>
+                <ul>
+                    <li><strong>Analytics:</strong> We analyze usage patterns within our app only to improve functionality and user experience</li>
+                    <li><strong>Performance Metrics:</strong> We collect crash data and performance data to fix bugs and optimize the app</li>
+                    <li><strong>Product Interaction:</strong> We monitor how features are used to make the app better</li>
+                    <li><strong>First-Party Marketing:</strong> We may send you notifications about our own features, updates, and subscription offers</li>
+                </ul>
+                
+                <p><strong>Important:</strong> All analytics and diagnostics are used exclusively to improve Clink. We do not share this data with advertising networks or use it for cross-app tracking.</p>
             </section>
 
             <section class="legal-section">
-                <h2>Children's Privacy</h2>
-                <p>Our App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we learn we have collected information from a child under 13, we will delete that information as quickly as possible.</p>
+                <h2>International Data Transfers</h2>
+                <p>Your information may be transferred to and maintained on servers located outside of your state, province, country, or other governmental jurisdiction where data protection laws may differ from those in your jurisdiction.</p>
+                <p>Our servers and third-party service providers (Firebase) are located in the United States. By using the App, you consent to the transfer of your information to the United States and other countries where we or our service providers operate.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>California Privacy Rights</h2>
+                <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+                <ul>
+                    <li><strong>Right to Know:</strong> You can request information about the categories and specific pieces of personal information we have collected about you</li>
+                    <li><strong>Right to Delete:</strong> You can request deletion of your personal information</li>
+                    <li><strong>Right to Opt-Out:</strong> We do not sell personal information, so there is nothing to opt out of</li>
+                    <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
+                </ul>
+                <p>To exercise these rights, please contact us using the information provided below.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>European Privacy Rights (GDPR)</h2>
+                <p>If you are located in the European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR):</p>
+                
+                <h3>Legal Basis for Processing</h3>
+                <p>We process your data based on:</p>
+                <ul>
+                    <li>Your consent (for profile information and optional features)</li>
+                    <li>Performance of a contract (to provide our services)</li>
+                    <li>Legitimate interests (to improve our services and ensure security)</li>
+                </ul>
+
+                <h3>Your Rights</h3>
+                <ul>
+                    <li>Right to access your personal data</li>
+                    <li>Right to rectification of inaccurate data</li>
+                    <li>Right to erasure ("right to be forgotten")</li>
+                    <li>Right to restrict processing</li>
+                    <li>Right to data portability</li>
+                    <li>Right to object to processing</li>
+                    <li>Right to withdraw consent at any time</li>
+                </ul>
+                <p>To exercise these rights or for questions about data protection, please contact us at the address below.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>Age Requirements</h2>
+                <p><strong>Our App is intended for users 18 years of age and older.</strong></p>
+                <p>We do not knowingly collect personal information from anyone under the age of 18. If you are under 18, please do not use the App or provide any information. Users must be at least 18 years old to create an account and use Clink.</p>
+                <p>If we learn we have collected information from a person under 18, we will delete that information as quickly as possible. Parents or guardians who believe their child has provided personal information may contact us immediately to request deletion.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+                <ul>
+                    <li>Posting the new Privacy Policy in the App</li>
+                    <li>Updating the "Last Updated" date at the top of this policy</li>
+                    <li>Sending you a notification through the App or email for material changes</li>
+                </ul>
+                <p>Your continued use of the App after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
             </section>
 
             <section class="legal-section">
                 <h2>Contact Us</h2>
                 <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
-                <p class="contact-info">
+                <div class="contact-info">
                     <strong>Clink Innovated, LLC</strong><br>
+                    Address: 1511 Texas Ave S., College Station, TX 77840<br>
                     Email: <a href="mailto:innovated@clinkn.com">innovated@clinkn.com</a><br>
                     Website: <a href="https://clinkn.com">https://clinkn.com</a>
-                </p>
+                    <p style="margin-top: 16px; font-size: 14px; color: var(--text-secondary);">For data protection inquiries specifically, please use the subject line "Privacy Policy Inquiry."</p>
+                </div>
             </section>
 
             <section class="legal-section">
