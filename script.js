@@ -166,6 +166,6 @@ window.addEventListener('resize', () => {
 });
 
 // Easter egg: Console message
-console.log('%cClink', 'color: #33CC66; font-size: 48px; font-weight: bold;');
-console.log('%cConnect, Share, Discover', 'color: #6c757d; font-size: 16px;');
-console.log('%cLooking for a job? We\'re hiring! Email us at careers@clinkn.com', 'color: #33CC66; font-size: 14px;');
+console.log('%cCLINK', 'color: #E265FF; font-size: 48px; font-weight: bold; letter-spacing: 8px;');
+console.log('%cFirst we clink, then we drink', 'color: rgba(255, 255, 255, 0.7); font-size: 16px; font-style: italic;');
+console.log('%cLooking for a job? We\'re hiring! Email us at careers@clinkn.com', 'color: #E265FF; font-size: 14px;');
