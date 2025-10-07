@@ -1,6 +1,7 @@
 [build]
   publish = "."
-  command = "echo 'No build step required'"
+  command = "npm install"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/*"

@@ -50,3 +50,11 @@ lerna-debug.log*
 
 # Netlify
 .netlify
+
+# Apple MapKit JS Private Key (DO NOT COMMIT)
+*.p8
+AuthKey_*.p8
+
+# Node modules (for serverless functions)
+node_modules/
+package-lock.json

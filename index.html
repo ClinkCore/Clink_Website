@@ -30,6 +30,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Apple MapKit JS -->
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js" crossorigin async></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -96,8 +99,19 @@
             <div class="hero-image">
                 <div class="phone-glow"></div>
                 <div class="phone-mockup">
-                    <div class="phone-frame">
-                        <div class="phone-screen">
+                    <div class="iphone-frame">
+                        <!-- iPhone Side Buttons -->
+                        <div class="iphone-button-left iphone-silent"></div>
+                        <div class="iphone-button-left iphone-volume-up"></div>
+                        <div class="iphone-button-left iphone-volume-down"></div>
+                        <div class="iphone-button-right iphone-power"></div>
+                        
+                        <!-- iPhone Screen -->
+                        <div class="iphone-screen">
+                            <!-- Dynamic Island -->
+                            <div class="dynamic-island"></div>
+                            
+                            <!-- App Content -->
                             <div class="mockup-content" style="position: relative;">
                                 <img src="assets/clink-intro.png" alt="Clink App Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
                                 <div style="position: absolute; bottom: 30%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%;">
@@ -322,16 +336,7 @@
                 
                 <div class="contact-map-container">
                     <div class="map-wrapper">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.6448193837937!2d-96.32797!3d30.614445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646834e41c7c355%3A0x8e6c4b5e7e4e7e4e!2s1511%20Texas%20Ave%20S%2C%20College%20Station%2C%20TX%2077840!5e0!3m2!1sen!2sus!4v1234567890"
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Clink Location Map">
-                        </iframe>
+                        <div id="apple-map" class="apple-map"></div>
                     </div>
                     <div class="map-overlay">
                         <div class="map-overlay-content">
@@ -382,5 +387,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="mapkit-init.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+{
+  "name": "clink-website",
+  "version": "1.0.0",
+  "description": "Clink - Connect, Share, Discover",
+  "private": true,
+  "scripts": {
+    "start": "node local-server.js",
+    "dev": "node local-server.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}
