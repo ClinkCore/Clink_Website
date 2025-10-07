@@ -1,0 +1,13 @@
+# robots.txt for clinkn.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (add as needed)
+# Disallow: /admin/
+
+# Sitemap
+Sitemap: https://clinkn.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 10
