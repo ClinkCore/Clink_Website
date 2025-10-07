@@ -22,7 +22,7 @@ exports.handler = async function(event, context) {
 
   try {
     // Read the private key
-    const privateKeyPath = path.join(__dirname, '../../AuthKey_2NFLGX88B9.p8');
+    const privateKeyPath = path.join(__dirname, 'AuthKey_2NFLGX88B9.p8');
     const privateKey = fs.readFileSync(privateKeyPath, 'utf8');
 
     // MapKit JS configuration

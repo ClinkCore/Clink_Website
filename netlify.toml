@@ -3,6 +3,10 @@
   command = "npm install"
   functions = "netlify/functions"
 
+[functions]
+  included_files = ["netlify/functions/*.p8"]
+  node_bundler = "esbuild"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
