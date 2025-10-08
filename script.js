@@ -169,3 +169,4 @@ window.addEventListener('resize', () => {
 console.log('%cCLINK', 'color: #E265FF; font-size: 48px; font-weight: bold; letter-spacing: 8px;');
 console.log('%cFirst we clink, then we drink', 'color: rgba(255, 255, 255, 0.7); font-size: 16px; font-style: italic;');
 console.log('%cLooking for a job? We\'re hiring! Email us at careers@clinkn.com', 'color: #E265FF; font-size: 14px;');
+

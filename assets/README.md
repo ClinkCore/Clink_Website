@@ -54,3 +54,4 @@ This directory should contain all image and media assets for the website.
 🔴 **Assets needed:** Please add the required assets before deploying to production.
 
 Once added, the website will automatically use them (no code changes needed).
+
