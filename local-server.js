@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const jwt = require('jsonwebtoken');
 
-const PORT = 3000;
+const PORT = 8080;
 
 // MIME types
 const mimeTypes = {
